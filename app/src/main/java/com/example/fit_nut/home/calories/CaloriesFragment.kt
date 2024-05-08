@@ -66,7 +66,7 @@ class CaloriesFragment : Fragment() {
         foodDetails.add(item2)
         foodDetails.add(item3)
         foodDetails.add(item4)
-
+        adapter.notifyDataSetChanged()
     }
 
 }
