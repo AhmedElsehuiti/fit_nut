@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="304dp"
+    android:height="82dp"
+    android:viewportWidth="304"
+    android:viewportHeight="82">
+    <path
+        android:strokeColor="#FF729900"
+        android:strokeWidth="1"
+        android:pathData="M0 54.11h30.07l11.12 9.84L62.76 11.5l20.27 61.64 8.5-9.18 5.88 9.18h35.3l7.85 7.87 3.27-11.15L164.75 1l13.07 68.85L190.25 81l5.88-17.05h38.57l6.54 5.9 3.92-5.9 15.7-46.56 13.07 46.56H304"/>
+</vector>

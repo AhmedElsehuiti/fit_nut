@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:background="@drawable/border"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_4sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_8sdp"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_4sdp"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_cal_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="safsfsafsafsafd" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cal_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toTopOf="@id/txt_cal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            android:text="Cal"
+           />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cal_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toTopOf="@id/txt_cal"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            app:layout_constraintEnd_toStartOf="@+id/txt_cal_number"
+            tools:text="124 " />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            tools:text="400 " />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totals_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableEnd="@drawable/ic_fluent"
+            android:drawablePadding="@dimen/_8sdp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toEndOf="@id/txt_cal"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            android:text="Cal"
+             />
+        <View
+            android:id="@+id/devider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/grey2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cal" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_add_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/devider" />
+
+        <TextView
+            android:id="@+id/txt_add_food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingStart="@dimen/_6sdp"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="@+id/img_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_add"
+            app:layout_constraintTop_toBottomOf="@id/devider"
+
+            tools:text="Add food" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_single_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_6sdp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_add_food"
+            tools:listitem="@layout/item_single_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

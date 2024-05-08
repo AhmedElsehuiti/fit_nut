@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519829115615",
+    "project_id": "fit-nut-app",
+    "storage_bucket": "fit-nut-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519829115615:android:3be00734b45756398b0f6a",
+        "android_client_info": {
+          "package_name": "com.example.fit_nut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0o7Fa83mvwJgx_ps8mKr853d7bgjVQ4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

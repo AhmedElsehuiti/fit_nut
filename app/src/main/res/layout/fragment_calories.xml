@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/_15sdp"
+        app:cpb_background_progressbar_color="#949494"
+        app:cpb_background_progressbar_width="10dp"
+        app:cpb_progressbar_color="#379E3B"
+        app:cpb_round_border="true"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/progress_circular"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        android:text="0.0"
+        />
+    <LinearLayout
+        android:id="@+id/layoutLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@+id/progress_circular" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Carbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/point"
+                android:drawablePadding="@dimen/_8sdp"
+                android:text="Carbs "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Carbs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/grey2"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gm"
+                android:textColor="@color/grey2"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_Fats1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawableStart="@drawable/point"
+            android:drawablePadding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:text="Proteins "
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_Fats2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/grey2"
+            android:textSize="@dimen/_16sdp"
+            android:text="0.0"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/grey2"
+            android:textSize="@dimen/_16sdp"
+            android:text="gm"
+            />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Proteins1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:drawableStart="@drawable/point"
+                android:drawablePadding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:text="Fats "
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Fats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/grey2"
+                android:textSize="@dimen/_16sdp"
+                android:text="0.0"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/grey2"
+                android:textSize="@dimen/_16sdp"
+                android:text="gm"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/total_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="2500"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutLayout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cal "
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/layoutLayout"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_16sdp"
+
+        app:layout_constraintEnd_toStartOf="@+id/total_cal" />
+        <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="@dimen/_4sdp"
+        android:id="@+id/rv_break_fast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_food"
+         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_cal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
