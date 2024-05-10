@@ -3,6 +3,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     >
-
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Category Title"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/categoryTitle"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/chooseYourCategory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Choose your category"
+            app:boxStrokeColor="@color/green">
+            <AutoCompleteTextView
+                android:id="@+id/chooseYourCategoryAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/priority"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="20dp"
+            android:hint="Diet Priority"
+            app:boxStrokeColor="@color/green">
+            <AutoCompleteTextView
+                android:id="@+id/dietAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activityLevel"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="20dp"
+            android:hint="Activity Level"
+            app:boxStrokeColor="@color/green">
+            <AutoCompleteTextView
+                android:id="@+id/activityLevelAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Caloric intake"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/green"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/diet_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2500"
+            android:textSize="@dimen/_40sdp"
+            android:textColor="@color/green"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getDiet"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/singup"
+            android:baselineAligned="false"
+            android:drawablePadding="20dp"
+            android:paddingStart="20dp"
+            android:text="Get on the diet "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
