@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Fit_nut"
         tools:targetApi="31">
         <activity
+            android:name=".home.diet_frgment.FoodDiet"
+            android:exported="false" />
+        <activity
             android:name=".home.home_fragment.WeightBMI"
             android:exported="false" />
         <activity

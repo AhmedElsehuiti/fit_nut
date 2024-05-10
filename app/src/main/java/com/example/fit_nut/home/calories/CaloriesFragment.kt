@@ -16,7 +16,7 @@ import kotlinx.coroutines.runBlocking
 
 class CaloriesFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter:FoodDailyCal
+    private lateinit var adapter:FoodDailyCalAadpter
     private var foodDetails=ArrayList<ItemFood>()
     private lateinit var totalCal : TextView
     private lateinit var userInformationViewModel: UserInformationViewModel
@@ -52,10 +52,9 @@ class CaloriesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = view.findViewById(R.id.rv_break_fast)
-        adapter = FoodDailyCal(foodDetails)
+        adapter = FoodDailyCalAadpter(foodDetails)
         recyclerView.adapter = adapter
-        dailyFood()  // انقل هذه الدالة لتأتي بعد تعيين ال adapter
-
+        dailyFood()
     }
     private fun dailyFood() {
         val item1 = ItemFood("Breakfast", "0.0", "0.0")
