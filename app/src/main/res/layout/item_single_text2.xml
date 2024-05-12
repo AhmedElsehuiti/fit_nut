@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c2" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageView13"
+        tools:text=" Name meals"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@id/imageView13" />
+
+    <TextView
+        android:id="@+id/food_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/food_name"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@id/food_name"
+        tools:text="180 " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/food_cal"
+        app:layout_constraintTop_toBottomOf="@id/food_name"
+        android:text="cal"
+        android:textColor="@color/green"
+         />
+
+    <TextView
+        android:id="@+id/text_gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey2"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="gm"
+       />
+
+    <TextView
+        android:id="@+id/food_gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="180 "
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/text_gm"
+        app:layout_constraintEnd_toStartOf="@+id/text_gm"
+        app:layout_constraintTop_toTopOf="@+id/text_gm" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change meal"
+        android:drawableEnd="@drawable/change_meal"
+        app:layout_constraintEnd_toEndOf="@+id/text_gm"
+        app:layout_constraintStart_toStartOf="@+id/food_gm"
+        app:layout_constraintTop_toBottomOf="@+id/text_gm"/>
+    <View
+        android:id="@+id/devider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/grey2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

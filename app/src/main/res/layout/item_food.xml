@@ -112,8 +112,9 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/_4sdp"
             android:orientation="vertical"
-            android:paddingBottom="@dimen/_6sdp"
             android:visibility="gone"
+
+            android:paddingBottom="@dimen/_6sdp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
