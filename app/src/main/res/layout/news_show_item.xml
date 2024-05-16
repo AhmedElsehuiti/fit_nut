@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleType="centerCrop"
+        imageUrl="@{item.urlToImage}"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:src="@drawable/img_7" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginBottom="-1dp"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/buttom_public" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/imageView15"
+        app:layout_constraintTop_toTopOf="@id/imageView15"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:srcCompat="@drawable/save_news" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView15"
+        app:layout_constraintWidth_percent=".7">
+
+        <TextView
+            android:id="@+id/news_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="The standard Lorem Ipsum passage"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            />
+        <TextView
+            android:id="@+id/news_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

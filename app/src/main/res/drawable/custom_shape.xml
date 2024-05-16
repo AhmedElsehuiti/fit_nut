@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <corners
+        app:cornerFamily="rounded"
+        app:cornerSizeTopLeft="16dp"
+        app:cornerSizeTopRight="8dp"
+        app:cornerSizeBottomRight="24dp"
+        app:cornerSizeBottomLeft="32dp"/>
+</shape>
